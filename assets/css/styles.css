@@ -462,3 +462,93 @@ a {
 .feature-btn {
   height: 60px;
 }
+
+/* member */
+
+.member {
+  padding: 85px 0;
+  text-align: center;
+}
+
+.member__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.member__cta {
+  margin-top: 38px;
+}
+
+.member__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 34px;
+  margin-top: 70px;
+}
+
+.member-item__img-bg {
+  padding-top: 28px;
+  border-radius: 6px;
+  background: #EAF6FF;
+  overflow: hidden;
+}
+
+.member-item__thumb {
+  display: block;
+  height: 318px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* max-width: 100%; trong CSS có nghĩa là: */
+/* Chiều rộng tối đa của phần tử sẽ bằng 100% chiều rộng của phần tử cha (container chứa nó). */
+/* 
+Giải thích chi tiết:
+
+Phần tử có thể có chiều rộng nhỏ hơn hoặc bằng 100% của phần tử cha
+Phần tử không bao giờ vượt quá chiều rộng của phần tử cha
+Nếu nội dung bên trong nhỏ hơn 100%, phần tử sẽ co lại theo kích thước nội dung
+Nếu nội dung lớn hơn 100%, phần tử sẽ bị giới hạn ở 100% */
+
+.member-item__name {
+  margin-top: 12px;
+  color: #10375C;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 175%; /* 175% */
+}
+
+.member-item__desc {
+  color: #575F66;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 26px; /* 185.714% */
+}
+
+.member__control {
+  display: flex;
+  justify-content: center;
+  column-gap: 18px;
+  margin-top: 38px;
+}
+
+.member__controll-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #575F66;
+  outline: none;
+  background: white;
+  transition: 0.25s;
+}
+
+.member__controll-btn:hover {
+  background: #2E80CE;
+  color: white;
+  border: 2px solid #2E80CE;
+  cursor: pointer;
+}
